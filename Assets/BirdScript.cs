@@ -6,7 +6,6 @@ public class BirdScript : MonoBehaviour
     public float flapStrength;
     public LogicScript logic;
     public bool birdIsAlive = true;
-    public Animator wing;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -21,6 +20,13 @@ public class BirdScript : MonoBehaviour
         {
             myRigidbody.linearVelocity = Vector2.up * flapStrength;
         }
+
+        if((myRigidbody.transform.position.y >= 18 || myRigidbody.transform.position.y <= -18.2) && birdIsAlive)
+        {
+            logic.GameOver();
+            birdIsAlive = false;
+        }
+
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
