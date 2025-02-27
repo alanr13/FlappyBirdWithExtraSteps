@@ -149,7 +149,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pipe: {fileID: 4070613748012796462, guid: fceb4db7af8303a48af859eff56135ef, type: 3}
-  spawnRate: 3
+  spawnRate: 2
   heightOffset: 10
 --- !u!4 &57453227
 Transform:
@@ -373,7 +373,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 2
-  m_BackGroundColor: {r: 0.27784863, g: 0.4745098, b: 0.19215688, a: 0}
+  m_BackGroundColor: {r: 0.38020647, g: 0.54577434, b: 0.9056604, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -942,7 +942,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDamping: 0
   m_AngularDamping: 0.05
-  m_GravityScale: 4
+  m_GravityScale: 8
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -1038,7 +1038,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   myRigidbody: {fileID: 1196646108}
-  flapStrength: 15
+  flapStrength: 26
   logic: {fileID: 0}
   birdIsAlive: 1
 --- !u!58 &1196646112
