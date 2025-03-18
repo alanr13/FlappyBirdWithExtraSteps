@@ -3,6 +3,7 @@ using UnityEngine;
 public class BirdScript : MonoBehaviour
 {
     public Rigidbody2D myRigidbody;
+    public GameObject arrow;
     public float flapStrength;
     public LogicScript logic;
     public bool birdIsAlive = true;
