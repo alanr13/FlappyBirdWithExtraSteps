@@ -557,5 +557,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db260edd229604d40956f256c834dddc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dropSpeed: 3
+  dropSpeed: 5
+  upperPipePosition: {fileID: 3930897681731122326}
   bottomPipe: {fileID: 2596422684006378457}

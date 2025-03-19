@@ -3,6 +3,7 @@ using UnityEngine;
 public class BottomPipeScript : MonoBehaviour
 {
     public float dropSpeed;
+    public Transform upperPipePosition;
     bool shouldMove = false;
     public GameObject bottomPipe;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -16,16 +17,13 @@ public class BottomPipeScript : MonoBehaviour
     {
         if (shouldMove)
         {
-            while (bottomPipe.transform.position.y > -39.1)
-            {
-                bottomPipe.transform.position = bottomPipe.transform.position + (Vector3.down * dropSpeed) * Time.deltaTime;
-            }
+            bottomPipe.transform.position = bottomPipe.transform.position + (Vector3.down * dropSpeed) * Time.deltaTime;
         }
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.gameObject.layer == 6)
+        if (collision.gameObject.layer == 6)
         {
             shouldMove = true;
         }
