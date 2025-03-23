@@ -3,9 +3,9 @@ using UnityEngine;
 public class BottomPipeScript : MonoBehaviour
 {
     public float dropSpeed;
-    public Transform upperPipePosition;
     bool shouldMove = false;
     public GameObject bottomPipe;
+    public GameObject topPipe;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -18,6 +18,10 @@ public class BottomPipeScript : MonoBehaviour
         if (shouldMove)
         {
             bottomPipe.transform.position = bottomPipe.transform.position + (Vector3.down * dropSpeed) * Time.deltaTime;
+            if(Vector3.Distance(bottomPipe.transform.position, topPipe.transform.position) >= 47.6)
+            {
+                shouldMove = false;
+            }
         }
     }
 

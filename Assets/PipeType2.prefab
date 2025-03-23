@@ -182,7 +182,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 34c3c39823f8c534aac0516af918b08d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 8
+  moveSpeed: 15
   deadZone: -37
 --- !u!1 &4418581738282542299
 GameObject:
@@ -557,6 +557,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db260edd229604d40956f256c834dddc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dropSpeed: 5
-  upperPipePosition: {fileID: 3930897681731122326}
+  dropSpeed: 30
   bottomPipe: {fileID: 2596422684006378457}
+  topPipe: {fileID: 5424832089053746733}
